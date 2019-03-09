@@ -1,0 +1,443 @@
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    GLOBAL    ####////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------// BODY //--------------------------------------------------------------------------------------*/
+html{}
+body{}
+
+	.bg{
+	    background: url(../img/rsc/back.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}​
+
+#wrapper{
+	font-family: 'Exo', sans-serif;
+}
+
+section{}
+article{}
+aside{}
+div{}
+span{}
+
+/*----------// TEXT //---------------------------------------------------------------------------------------*/
+h1{
+	font-family: 'Chango', serif;
+	font-style: normal;
+	text-transform: lowercase;
+}
+
+h2{}
+
+h3{}
+
+p{
+	font-family: 'Exo', sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 13px;
+	letter-spacing: 0.08em;
+	word-spacing: 3.5px;
+	line-height: 20px;
+	color: #DDD;
+	margin-bottom: 20px;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	border-bottom: #80A6FF 1px dotted;
+}
+
+em{
+	color: #FFB300;
+	font-style: normal;
+}
+
+strong{
+	font-weight: 600;
+	color: #80A6FF;
+}
+
+i{
+	font-style: italic;
+}
+
+b{
+	font-weight: bold;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    CLASSES    ####////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.button{
+	cursor: pointer;
+}
+
+.error{
+	background: #E85D07;
+	padding: 5px;
+	margin: 10px;
+	min-height: 30px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px #990000;
+	border: #000 thin solid;
+	-webkit-border-top-left-radius:  5px;
+	-moz-border-radius-topleft:      5px;
+	-o-border-radius-topleft:        5px;
+	border-top-left-radius:          5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright:     5px;
+	-o-border-radius-topright:       5px;
+	border-top-right-radius:         5px;
+}
+	.error a{
+		color: #16DCFA;
+	}
+
+	.error a:hover{
+		color: #D1B5FF;
+	}
+
+.clear{
+	clear:both;
+}
+
+.divide{
+	height: 1px;
+	width: 210px;
+	background: url(../img/rsc/divider.png);
+	margin-bottom: 20px;
+}
+
+.right{
+	margin-left: 450px;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    SIDEBAR    ####///////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#sidebar{
+	width: 250px;
+	position: fixed;
+	left: 100px;
+}
+
+/*----------// HEADER //------------------------------------------------------------------------------------*/
+header{
+	width: 250px;
+}
+
+	#logo{
+		background: url(../img/rsc/logo.icon.png);
+		width: 80px;
+		height: 92px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+#inner_header{
+		background: url(../img/rsc/logo.text.png) no-repeat;
+		width: 210px;
+		height: 50px;
+		margin-bottom: 20px;
+	}
+
+/*----------// MAIN MENU //---------------------------------------------------------------------------------*/
+#main_menu{
+	padding: 20px;
+	background: url(../img/rsc/back.menu.jpg);
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow:    0px 0px 5px rgba(0,0,0,0.25);
+	-o-box-shadow:		0px 0px 5px rgba(0,0,0,0.25);
+	box-shadow:         0px 0px 5px rgba(0,0,0,0.25);
+	-webkit-border-radius: 5px;
+	-moz-border-radius:    5px;
+	-o-border-radius:      5px;
+	border-radius:         5px;
+	font-family: 'Josefin Slab', serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.088em;
+	color: #999;
+}
+
+	#main_menu .nav.button{
+		height: 42px;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: right;
+		margin-top: 10px;
+	}
+
+		.nav.button.selected{
+			color: #444;
+			background-position: 0 -42px!important;
+		}
+
+	#go_home{
+		background: url(../img/btn/menu.home.png) no-repeat;
+	}
+
+	#go_portfolio{
+		background: url(../img/btn/menu.portfolio.png) no-repeat;
+	}
+
+	#go_about{
+		background: url(../img/btn/menu.about.png) no-repeat;
+	}
+
+	#go_contact{
+		background: url(../img/btn/menu.contact.png) no-repeat;
+	}
+
+		#go_home:hover,
+		#go_portfolio:hover,
+		#go_about:hover,
+		#go_contact:hover{
+			color: #444;
+			background-position: 0 -42px;
+		}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    CONTENT    ####////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------// CONTAINERS //---------------------------------------------------------------------------------*/
+#page{
+	width: 680px;
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 80px;
+	color: #DDD;
+}
+
+	#page article{
+		background: url(../img/rsc/back.article.png);
+		min-height: 100px;
+		margin: 20px 0 40px 0;
+		padding: 20px 15px 0 20px;
+		border: #2E3235 thin solid;
+		-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+		-moz-box-shadow:    0px 0px 5px rgba(0,0,0,0.25);
+		-o-box-shadow:		0px 0px 5px rgba(0,0,0,0.25);
+		box-shadow:         0px 0px 5px rgba(0,0,0,0.25);
+	}
+
+	.subhead{
+		background: url(../img/rsc/back.header.png) no-repeat;
+		width: 685px;
+		z-index: 9000;
+		height: 80px;
+		position: relative;
+		bottom: 25px;
+		right: 25px;
+	}
+
+		.subhead h2{
+			font-family: 'Josefin Slab', serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 0.088em;
+			padding-top: 15px;
+			padding-left: 40px;
+			color: #444;
+		}
+
+/*----------// HOME //--------------------------------------------------------------------------------------*/
+#home{}
+
+	.greeting{
+		width: 175px;
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		clear: left;
+	}
+
+		.greeting h1{
+			font-size: 65px;
+		}
+
+	#home .content{
+		text-align: justify;
+		overflow: hidden;
+	}
+
+/*----------// PORTFOLIO //---------------------------------------------------------------------------------*/
+#portfolio{}
+
+	#gallery{
+		position: relative;
+		bottom: 25px;
+	}
+
+		#gallery img.thumb{
+			display: inline-block;
+			margin: 5px;
+			-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+			-moz-box-shadow:    0px 0px 5px rgba(0,0,0,0.25);
+			-o-box-shadow:		0px 0px 5px rgba(0,0,0,0.25);
+			box-shadow:         0px 0px 5px rgba(0,0,0,0.25);
+			opacity: 0.5;
+		}
+
+			#gallery img.thumb:hover{
+				opacity: 1;
+			}
+
+			#gallery .thumb.nolink:hover{
+				opacity: 0.5;
+			}
+
+			#gallery a{
+				border: none;
+			}
+
+/*----------// ABOUT //-------------------------------------------------------------------------------------*/
+#about{}
+
+	#about img.info{
+		width: 50px;
+		padding-right: 4px;
+		padding-bottom: 20px;
+	}
+
+		#about img.info.last{
+			padding-right: 0px;
+		}
+
+	#about .content{
+		text-align: justify;
+		overflow: hidden;
+	}
+
+/*----------// CONTACT //-----------------------------------------------------------------------------------*/
+#contact{}
+
+	#contact table{
+		margin-left: 70px;
+	}
+
+		#contact .links{}
+		#contact .address{
+			padding-left: 80px;
+		}
+
+	#mailer{
+		display: inline-block;
+		margin: 0 auto!important;
+	}
+
+		#mail{
+			padding-top: 40px;
+			display: inline-block;
+		}
+
+			#mail input[type=text],
+			#mail input[type=email],
+			#mail input[type=submit],
+			#mail textarea{
+				padding: 5px;
+				margin-bottom: 10px;
+				margin-left: 100px;
+			}
+
+			#mail input[type=text],
+			#mail input[type=email],
+			#mail textarea{
+				background: url(../img/rsc/back.menu.jpg);
+				-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+				-moz-box-shadow:    0px 0px 5px rgba(0,0,0,0.25);
+				-o-box-shadow:		0px 0px 5px rgba(0,0,0,0.25);
+				box-shadow:         0px 0px 5px rgba(0,0,0,0.25);
+				-webkit-border-radius: 5px;
+				-moz-border-radius:    5px;
+				-o-border-radius:      5px;
+				border-radius:         5px;
+				font-family: 'Exo', sans-serif;
+				font-style: normal;
+				font-weight: 200;
+				font-size: 13px;
+				letter-spacing: 0.08em;
+				width: 400px;
+			}
+
+			#mail textarea{
+				height: 100px;
+			}
+
+			#mail input[type=submit]{
+				background: #80A6FF;
+				font-family: 'Exo', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 13px;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+				width: 413px;
+			}
+
+		#mailReturn{
+			color: #FFB300;
+			font-style: italic;
+			margin-bottom: 25px;
+		}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    FOOTER    ####////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer{
+	margin-bottom: 20px;
+	margin-right: 100px;
+	color: #DDD;
+	text-align: center;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    PORTFOLIO PAGES    ####///////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.port_page{}
+
+	.port_page img{
+		padding-bottom: 20px;
+	}
+
+	#back_btn{
+		font-family: 'Josefin Slab', serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.088em;
+		padding-left: 40px;
+		color: #888;
+	}
+
+		#back_btn:hover{
+			color: #FFF;
+		}
+
+	.img_link,
+	#back_btn{
+		border: none;
+	}

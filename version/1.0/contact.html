@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>jon reimer | get</title>
+		<meta charset="UTF-8">
+        <meta name="keywords" content="vancouver, canada, web design, web developer, portfolio, student, photography, graphic design, web industry, jon reimer" />
+        <meta name="description" content="This is the personal website of Jonathan J Reimer--a Canadian web designer and developer who is currently going to school in Vancouver. Here you will find my delightful portfolio of photography and web/graphic design. Welcome to my website!" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+			
+			//////////////
+			//** INIT **//
+			//////////////
+			$(function(){
+				$("body").css("display", "none");
+				$("body").fadeIn(1000);
+				
+				$('.gotoTop').css( 'cursor', 'pointer' );
+				$('.gotoTop').center();
+				$('.gotoTop').click(function(e){
+					$("html,body").animate({ scrollTop:0},'slow','swing');
+				});
+				
+				addDate();
+			})
+			//////////////////
+			//** ADD DATE **//
+			//////////////////
+			function addDate()
+			{
+				var theYear = (new Date).getFullYear();
+				
+				if(theYear > 2012)
+				{
+					$(".year").text("2012-"+theYear);
+				}else
+				{
+					$(".year").text(theYear);
+				}
+			}
+			
+			jQuery.fn.center = function () {
+    			this.css("position","absolute");
+    			this.css("left", ( $(window).width() - this.width() ) / 2+$(window).scrollLeft() + "px");
+    			return this;
+			}
+		
+		</script>
+        <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+    	<section id="header">
+        	<section id="innerheader">
+            	<img src="img/logo.png" alt="Jon J Reimer" id="logo" />
+        	</section><!--innerheader-->
+        </section><!--header-->
+            
+        <div id="wrapper">
+        	<section id="news-column">
+            	<a href="http://linkedin.com/in/jonjreimer"><img src="img/linkedin.png" alt="LinkedIn" /></a>
+                <a href="mailto:jon.reimer@darkdreamind.com?Subject=IAmTheGreatest"><img src="img/mail.png" alt="E-Mail" /></a><br>
+                <a href="http://marshmallowgherkin.deviantart.com"><img src="img/deviantart.png" alt="deviantArt" /></a>
+                <a href="https://www.facebook.com/XenrinAndeth"><img src="img/facebook.png" alt="Facebook" /></a>
+            </section><!--news-column-->
+            <div id="rightside">
+            	<section id="content">
+                    <h1>Contact.</h1>
+                    <form action="" method="post" name="contactr" class="first">
+                    	<input name="yourname" id="yourname" type="text" placeholder="Your Name:"><br>
+                        <input name="youremail" id="youremail" type="text" placeholder="Your E-Mail"><br>
+                        <textarea name="yourmssg" id="yourmssg" placeholder="This form is totally fake. Please don't actually use it. Instead, why don't you just send an email off to hi@voidlike.com" ></textarea><br>
+                        <input name="submit" type="button" value="submit" id="submitbutton">
+                    </form>
+                </section><!--content-->
+                <aside id="main-nav">
+                	<section id="mainmenu">
+                    	<a id="index-link" href="index.html" title="Go Home" class="inactive"></a>
+                        <a id="portfolio-link" href="portfolio.html" title="Web Portfolio" class="inactive"></a>
+                        <a id="about-link" href="about.html" title="Understand Jon" class="inactive"></a>
+                        <a id="contact-link" href="contact.html" title="Contact Jon Today" class="active"></a>
+                        <a id="blog-link" href="blog.html" title="Development Weblog" class="inactive"></a>
+                    </section><!--mainmenu-->
+                </aside>
+            </div><!--rightside-->
+        </div><!--wrapper-->
+        
+        <footer>
+            <p id="innerfooter">This website &amp; its contents are &copy; <span class="year"></span> to Jon Reimer (unless otherwise stated, of course).<br />
+            Website redesigned by Jon Reimer, who would like to thank you for reading the small print.</p>
+        </footer>
+        <div class="gotoTop">[up]</div>
+	</body>
+</html>

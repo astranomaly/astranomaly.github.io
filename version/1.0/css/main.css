@@ -1,0 +1,273 @@
+/*GLOBAL*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family: "Century Gothic", Eurostyle, CenturyGothic, AppleGothic, Helvetica, sans-serif;
+	text-align:justify;
+	font-weight:300;
+	text-decoration:none;
+	text-emphasis:none;
+	text-transform:lowercase;
+}
+
+body{
+	background:url(../img/back.png);
+}
+
+a{
+	color:#4079FF;
+}
+
+p{
+	color:#404040;
+	margin-bottom:5px;
+}
+
+h1{
+	color:#CCC;
+	font-family:'Gravitas one', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-size:40px;
+	float:left;
+	letter-spacing:3px;
+}
+
+.first{
+	clear:both;
+}
+
+h2{
+	color:#39F;
+	font-family:'Advent Pro', Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size:20px;
+	letter-spacing:2px;
+	font-weight:700;
+}
+
+h3{
+	color:#999;
+	font-family:'Advent Pro', Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size:16px;
+	letter-spacing:2px;
+	font-weight:700;
+}
+
+p{
+	margin-top:5px;
+	color:#666;
+	font-size:11px;
+	line-height:180%;
+	letter-spacing:1px;
+}
+
+strong{
+	font-weight:700;
+	color:#FFB300;
+}
+
+em{
+	font-style:italic;
+}
+
+form{
+	font-size:12px;
+}
+
+input{
+	margin-bottom:5px;
+	padding-top:5px;
+}
+
+textarea{
+	padding-top:5px;
+}
+
+#submitbutton{
+	position:relative;
+	float:right;
+}
+
+/*HEADER*/
+#header{
+	background:url(../img/header-back.jpg);
+	height:100px;
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:50px;
+}
+
+#innerheader{
+	width:600px;
+	margin:0 auto;
+}
+
+#logo{
+	position:relative;
+	right:70px;
+}
+
+
+/*WRAPPER*/
+#wrapper{
+	width:600px;
+	margin:0 auto;
+}
+
+
+/*RIGHT SIDE WRAPPER*/
+#rightside{
+	float:right;
+	width:400px;
+	margin-bottom:50px;
+}
+
+
+/*NEWS COLUMN*/
+#news-column{
+	padding-right:20px;
+	float:left;
+	width:180px;
+	margin-bottom:50px;
+	margin-top:100px;
+}
+
+
+/*CONTENT COLUMN*/
+#content{
+	margin-top:60px;
+	float:left;
+	width:300px;
+}
+
+#images{
+	width:100%;
+	height:300px;
+}
+
+#images img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#resume{
+	padding-top: 1100px;
+}
+
+#yourname{
+	width:100%;
+}
+
+#youremail{
+	width:100%;
+}
+
+#yourmssg{
+	width:100%;
+	height:200px;
+}
+
+
+/*MAIN NAV COLUMN*/
+#main-nav{
+	float:right;
+	width:100px;
+}
+
+#mainmenu{
+	height:100px;
+}
+
+#mainmenu a{
+	width:100px;
+  	display:block;
+	background-image:url(../img/nav.png);
+}
+
+#index-link.active{
+	background-position:-100px 0;
+}
+#portfolio-link.active{
+	background-position:-100px -23px;
+}
+#about-link.active{
+	background-position:-100px -43px;
+}
+#contact-link.active{
+	background-position:-100px -64px;
+}
+#blog-link.active{
+	background-position:-100px -83px;
+}
+
+#index-link{
+	background-position:0 0;
+	height:24px;
+}
+#index-link:hover{
+	background-position:-200px 0;
+}
+
+#portfolio-link{
+	height:20px;
+	background-position:0 -23px;
+}
+#portfolio-link:hover{
+	background-position:-200px -23px;
+}
+
+#about-link{
+	height:21px;
+	background-position:0 -43px;
+}
+#about-link:hover{
+	background-position:-200px -43px;
+}
+
+#contact-link{
+	height:19px;
+	background-position:0 -64px;
+}
+#contact-link:hover{
+	background-position:-200px -64px;
+}
+
+#blog-link{
+	height:17px;
+	background-position:0 -83px;
+}
+#blog-link:hover{
+	background-position:-200px -83px;
+}
+
+
+/*FOOTER*/
+footer{
+	clear:both;
+	background:#FFF;
+	height:50px;
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:20px;
+}
+
+#innerfooter{
+	width:600px;
+	margin:0 auto;
+	padding-top:10px;
+	font-size:9px;
+	letter-spacing:-0.2;
+	color:#CCC;
+	text-align:center;
+}
+
+.gotoTop{
+	color:#4079FF;
+	font-family:'Advent Pro', Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size:13px;
+	font-weight:500;
+	width:50px;
+	position:absolute;
+	padding-bottom:25px;
+}

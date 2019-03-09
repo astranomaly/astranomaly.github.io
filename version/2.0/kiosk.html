@@ -1,0 +1,66 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PORTFOLIO | OMNICULUS</title>
+    <meta name="description" content="Omniculus Systems: The #1 recommended fake home security system!">
+    <meta name="keywords" content="flash,photoshop,ui,kiosk,home security system,light control,arduino,jon reimer">
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:300|Chango|Exo:200,600">
+    <link type="text/css" rel="stylesheet" href="css/vendor/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/vendor/boilerplate.css">
+    <link type="text/css" rel="stylesheet" href="css/vendor/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/secondary.js"></script>
+</head>
+    
+<body class='bg'>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">I'm sorry, but you seem to be using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. Thanks!</p>
+    <![endif]-->
+    <div id="wrapper">
+        <section id='sidebar'>
+            <header>
+                <div id='logo' class='button'></div>
+            </header>
+            <nav id='main_menu'>
+                <header class='button' id='inner_header'></header>
+                <div class='divide'></div>
+                <div class='nav button' id='go_home'><a href='index.html#home'>Welcome</a></div>
+                <div class='nav button selected' id='go_portfolio'><a href='index.html#portfolio'>Portfolio</a></div>
+                <div class='nav button' id='go_about'><a href='index.html#about'>About</a></div>
+                <div class='nav button' id='go_contact'><a href='index.html#contact'>Contact</a></div>
+            </nav><!--#main menu-->
+        </section><!--#sidebar-->
+        <div id="page" class='right'>
+            <noscript>
+                <section class="error">
+                    <p>JavaScript is required to view this site.</p><br>
+                    <p>Please adjust your browser's settings to <a href='http://goo.gl/12Xw'>enable JavaScript</a>. Thanks!</p>
+                </section>
+            </noscript>
+            <article id="portfolio_kiosk" class="port_page">
+                <header class='subhead'><h2>Omniculus Systems Kiosk</h2></header>
+                <section class='content'>
+                    <p>This fine fictional house feature actually started as a simple <em>UI design</em>. The idea was to plan and design a home security system <em>touchscreen kiosk</em>. A year later, I added some simple interactivity by moving the design into Flash and connecting the program to an <em>RGB LED light</em>. The program has three sliders (RED, GREEN, BLUE) that increase or diminish the intensity of the LED. The kiosk also has a toggle ON/OFF button, which fully raises or lowers all three values.</p>
+                    <img src="img/portfolio/kiosk.jpg" alt="Omniculus Systems kiosk">
+                    <p>This system uses <em>ActionScript 3</em> and <em>as3glue</em> under the UI in order to connect to an <em>Arduino</em> platform through <em>Serproxy</em>. The Arduino then connects to an RGB LED hidden underneath a stylish <em>ambient egg light</em>. If that all seems like a lot of work, it's because it was.<p>
+                </section><!--.content-->
+                <a id='back_btn' href='index.html#portfolio'>[Back]</a>
+                <p></p>
+                <div class='clear'></div>
+            </article><!--portfolio_page-->
+        </div><!--#page-->
+    </div><!--wrapper-->
+    <footer class='right'>
+        <p>This website is powered by science and is &copy; <span class="year"></span> Jon J Reimer (and his pet rock).</p>
+    </footer>
+</body>
+</html>

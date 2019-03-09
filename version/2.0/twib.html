@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PORTFOLIO | TWIB</title>
+    <meta name="description" content="The Weather Is Beautiful: A dynamic weather app demo by Jon Reimer">
+    <meta name="keywords" content="web design,application,wunderground api,ajax,jquery,css3,php,jon reimer">
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:300|Chango|Exo:200,600">
+    <link type="text/css" rel="stylesheet" href="css/vendor/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/vendor/boilerplate.css">
+    <link type="text/css" rel="stylesheet" href="css/vendor/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/secondary.js"></script>
+</head>
+    
+<body class='bg'>
+	<!--[if lt IE 7]>
+    	<p class="chromeframe">I'm sorry, but you seem to be using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience. Thanks!</p>
+	<![endif]-->
+    <div id="wrapper">
+        <section id='sidebar'>
+            <header>
+                <div id='logo' class='button'></div>
+            </header>
+            <nav id='main_menu'>
+                <header class='button' id='inner_header'></header>
+                <div class='divide'></div>
+                <div class='nav button' id='go_home'><a href='index.html#home'>Welcome</a></div>
+                <div class='nav button selected' id='go_portfolio'><a href='index.html#portfolio'>Portfolio</a></div>
+                <div class='nav button' id='go_about'><a href='index.html#about'>About</a></div>
+                <div class='nav button' id='go_contact'><a href='index.html#contact'>Contact</a></div>
+            </nav><!--#main menu-->
+        </section><!--#sidebar-->
+        <div id="page" class='right'>
+            <noscript>
+                <section class="error">
+                    <p>JavaScript is required to view this site.</p><br>
+                    <p>Please adjust your browser's settings to <a href='http://goo.gl/12Xw'>enable JavaScript</a>. Thanks!</p>
+                </section>
+            </noscript>
+            <article id="portfolio_twib" class="port_page">
+                <header class='subhead'><h2>The Weather Is Beautiful</h2></header>
+                <section class='content'>
+                    <p>These days, nearly everyone checks the weather online. So why is it that all the most popular weather sites are so unintuitive and bland? <strong>The Weather Is Beautiful</strong> (aka. TWIB) is my attempt to fix these problems. There is <em>no clutter</em>. There is <em>no adspace</em>. There is <em>just the weather</em>.</p>
+                    <p>And the weather is beautiful.</p>
+                    <a class='img_link' rel='external' href='http://astranomaly.com/twib'><img src="img/portfolio/twib.jpg" alt="the.weather.is.beautiful"></a>
+                    <p>This project is a proof-of-concept for a single-serving weather web-app that is dynamically driven and focused on visual aesthetics. Is it the middle of the day? The <em>background will change</em> to a soft blue to reflect this. Nighttime? It's now a deep purple. Your location is <em>automatically detected</em>, but by signing up you can change your location and save two favourites.</p>
+                    <p>Right now, most of the dynamic content is only partially implemented. In the future, rain and snow will cause <em>rain and snow animations</em>, plants will flurish based on the season, and <em>temperature will affect the colour</em> of the site, among many planned features.</p>
+                    <p>TWIB is based on a framework of <em>HTML</em>, <em>CSS</em>, and <em>jQuery</em>. It uses <em>AJAX</em> to connect to the WeatherUnderground's API and receives <em>JSON</em>, which is then used to update the website's design and content. The user account system uses <em>PHP</em> to connect to <em>MySQL</em> databases.<p>
+                </section><!--.content-->
+                <a id='back_btn' href='index.html#portfolio'>[Back]</a>
+                <p></p>
+                <div class='clear'></div>
+            </article><!--portfolio_page-->
+        </div><!--#page-->
+    </div><!--wrapper-->
+    <footer class='right'>
+        <p>This website is powered by science and is &copy; <span class="year"></span> Jon J Reimer (and his pet rock).</p>
+    </footer>
+</body>
+</html>

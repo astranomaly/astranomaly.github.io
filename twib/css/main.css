@@ -1,0 +1,462 @@
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    GLOBAL    ####////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*----------// BODY //------------------------------------------------------------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	text-decoration:none;
+}
+
+html{
+	background:url(../img/rsc/back.gif);
+}
+
+body{}
+#bg{}
+
+	#wrapper{}
+
+/*----------// TEXT //------------------------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+.randomWord{
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#00AAFF;
+}
+
+h1{}
+h2{}
+h3{}
+p{}
+a{}
+em{}
+strong{}
+
+i{
+	font-style: italic;
+}
+
+b{
+	font-weight: bold;
+}
+
+blockquote{}
+small{}
+code{}
+address{}
+
+/*----------// CLASSES //---------------------------------------------------------------------------------------*/
+.button{
+	cursor: pointer;
+}
+
+.hider{
+	display:none;
+}
+
+.unhide{
+	display:inherit;
+}
+
+.horizontal{
+	padding:0px;
+	list-style:none;
+}
+	
+	.horizontal li{
+		display:inline;
+	}
+
+.bigtext{}
+.year{}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    HEADER    ####////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+header{}
+
+	header h1{
+		display: inline-block;
+		width: 200px;
+		font-size:20px;
+		margin-left:20px;
+	}
+
+	header .randomWord{
+		color:#F60;
+	}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    WEATHER    ####///////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#weather{
+	height: inherit;
+}
+
+/*----------// TEXTUAL DATA //----------------------------------------------------------------------------------*/
+.resultBox div,
+.tempBox div{
+	font-family: 'Wire One', sans-serif;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+	line-height: 0.85;
+	color: #FFF;
+}
+
+.resultBox{
+	margin: 0 auto;
+	width: 15%;
+	min-width: 100px;
+	max-width: 300px;
+	position: relative;
+	top: 20px;
+	z-index: 8000;
+}
+
+	.resultBox.location{}
+
+	.resultBox .province{
+		opacity: 0.5;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 8888;
+	}
+
+.tempBox{
+	width: 10%;
+	min-width: 80px;
+	max-width: 300px;
+	position: absolute;
+	bottom: 40px;
+	left: 400px;
+}
+
+/*----------// TIME & DATE //-----------------------------------------------------------------------------------*/
+.clock{
+	width:15%;
+	color: #FFF;
+	position: absolute;
+	bottom: 55px;
+	right: 100px;
+}
+
+	.date,
+	.time{
+		font-family: 'Wire One', sans-serif;
+		line-height: 0.85;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.date{
+		opacity: 0.6;
+	}
+
+	.time{
+		opacity: 0.3;
+	}
+
+/*----------// LOGIN & REG //-----------------------------------------------------------------------------------*/
+.login{
+	position: absolute;
+	z-index:9000;
+	top:25px;
+	right:25px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: url(../img/rsc/back.form.png);
+}
+
+	#logout{}
+	.hideContain{}
+
+		.hideContain p{
+			display: inline-block;
+			font-weight: bold;
+		}
+
+		#logForms{
+			padding: 10px;
+		}
+
+			#logForms form{}
+			
+				#logForms fieldset{}
+			
+					#logForms legend{
+						font-weight: bold;
+					}
+
+					#logForms input{
+						width: 170px;
+						padding: 3px;
+						padding-left: 10px;
+					}
+
+						.logButton{
+							background: #B30024;
+							text-align: center;
+							height: 25px;
+							padding-top: 4px;
+							padding-bottom: 4px;
+							color: #FFF;
+							width: 180px;
+							margin-bottom: 10px;
+						}
+
+						.logButton:hover{
+							background: #F00;
+						}
+
+						.logButton:active{
+							background: #965D5D;
+						}
+
+/*----------// MAIN MENU //-------------------------------------------------------------------------------------*/
+.main{}
+
+	.main .button{
+		position:absolute;
+		z-index: 5000;
+	}
+
+	#up{
+		background:url(../img/btn/up.png) no-repeat;
+	}
+
+	#down{
+		background:url(../img/btn/down.png) no-repeat;
+	}
+
+	#uBack{
+		background:url(../img/btn/home.up.png) no-repeat;
+	}
+
+	#dBack{
+		background:url(../img/btn/home.down.png) no-repeat;
+	}
+
+		#up,
+		#uBack{
+			margin-top: 15px;
+			width:120px;
+			height:70px;
+			top:0;
+		}
+
+		#down,
+		#dBack{
+			margin-bottom: 15px;
+			width:120px;
+			height:70px;
+			bottom:0;
+		}
+
+	#left{
+		background:url(../img/btn/left.png) no-repeat;
+	}
+
+	#right{
+		background:url(../img/btn/right.png) no-repeat;
+	}
+
+	#lBack{
+		background:url(../img/btn/home.left.png) no-repeat;
+	}
+
+	#rBack{
+		background:url(../img/btn/home.right.png) no-repeat;
+	}
+
+		#left,
+		#lBack
+		{
+			margin-left: 15px;
+			width:70px;
+			height:120px;
+			left:0;
+		}
+
+		#right,
+		#rBack
+		{
+			margin-right: 15px;
+			width:70px;
+			height:120px;
+			right:0;
+		}
+
+/*----------// ASTRONOMY //-------------------------------------------------------------------------------------*/
+.astro{
+	width: 100%;
+	height: 100%;
+}
+
+	.sun{
+		position: absolute;
+		right:30%;
+		z-index: 5;
+	}
+
+/*----------// ENVIRO //----------------------------------------------------------------------------------------*/
+
+.enviro{}
+
+	.tree{
+		width: 600px;
+		height: 471px;
+		position: absolute;
+		bottom: 20px;
+		left: -35px;
+	}
+
+		.tree.spring{
+			background: url(../img/season/tree.spring.png);
+		}
+
+		.tree.summer{
+			background: url(../img/season/tree.summer.png);
+		}
+
+		.tree.fall{
+			background: url(../img/season/tree.fall.png);
+		}
+
+		.tree.winter{
+			background: url(../img/season/tree.winter.png);
+		}
+
+	.ground{
+		height: 100px;
+		width: 100%;
+		background: url(../img/season/ground.winter.png);
+		position: absolute;
+		bottom: 25px;
+		z-index: 10;
+	}
+
+	.sunrise{
+		background:url(../img/time/back.sunrise.png) repeat-x;
+	}
+
+	.daytime{
+		background: url(../img/time/back.day.png) repeat-x;
+	}
+
+	.sunset{
+		background: url(../img/time/back.sunset.png) repeat-x;
+	}
+
+	.nighttime{
+		background: url(../img/time/back.night.png) repeat-x;
+	}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    SETINGS    ####///////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#settingsMenu{
+	margin-left: 25px;
+	padding: 20px;
+	width: 200px;
+	background: url(../img/rsc/back.form.png);
+}
+
+	form{}
+
+		#radC{}
+		#radF{}
+		#radK{}
+		#save{
+			background: #B30024;
+			text-align: center;
+			height: 25px;
+			padding-top: 8px;
+			color: #FFF;
+		}
+
+		#save:hover{
+			background: #F00;
+		}
+
+		#save:active{
+			background: #965D5D;
+		}
+
+	#settingsMenu .tree{
+		position: absolute;
+		left: 50%;
+	}
+
+/*----------// PICK LOCATION //---------------------------------------------------------------------------------*/
+#pickLoc{}
+
+	#pickLoc .button{
+		margin-right: 10px;
+		font-size: 12px;
+		background: #FFF;
+	}
+
+	#pickLoc .selected{
+		background: #F00;
+	}
+
+	#default{}
+	#fav1{}
+	#fav2{}
+
+#autocomplete{}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    INFO PAGE    ####/////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#infoPage{}
+
+	#infoPage p{
+		color: #FFF;
+		text-align: center;
+		padding-top: 40px;
+		font-size: 23px;
+	}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*####    FOOTER    ####////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	background: #FFF;
+	color: #000;
+	font-size: 10px;
+	color:#ADADAD;
+}
+
+	footer a{
+		color: #32ACFC;
+	}
+
+	footer img{
+		padding-bottom: 5px;
+	}
