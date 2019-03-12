@@ -59,7 +59,9 @@
 	));
 
 /* Basic */
-
+    html {
+        scroll-behavior: smooth;
+    }
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;

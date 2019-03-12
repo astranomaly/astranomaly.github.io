@@ -1539,6 +1539,41 @@
 
 /* Basic */
 
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .flexbox{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: flex-start;
+        flex-wrap: wrap
+    }
+        .flexbox div{
+            box-sizing: border-box;
+            padding: 0 2vh;
+            flex: 1 0 100%;
+        }
+        .flexbox li{
+            line-height: 5vh;
+            padding: 1.5vh 0;
+        }
+            .flexbox li span{
+                display: inline-block;
+            }
+        @media all and (min-width: 738px) {
+            .flexbox{flex-wrap: nowrap}
+            .flexbox div { flex: 1 33%; }
+        }
+
+
+    .fancy {
+        font-family: Baskerville, Constantia, "Palatino Linotype","Trebuchet MS", 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+        font-style: italic;
+        font-weight: normal;
+    }
+
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
