@@ -1556,7 +1556,7 @@
             flex: 1 0 100%;
         }
         .flexbox li{
-            line-height: 5vh;
+            line-height:1.5rem;
             padding: 1.5vh 0;
         }
             .flexbox li span{
