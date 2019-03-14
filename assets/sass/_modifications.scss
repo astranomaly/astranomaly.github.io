@@ -64,8 +64,13 @@ html {
         text-align: justify;
     }
 
-    &.one.userscripts{
-        background-image: url(../../images/banner-userscripts.jpg);
+    &.one{
+        &.userscripts{
+            background-image: url(../../images/banner-userscripts.jpg);
+        }
+        &.storage{
+            background-image: url(../../images/banner-storage.jpg);
+        }
     }
 }
 
@@ -73,10 +78,15 @@ html {
     text-align: center;
 }
 
-.button span.icon{
-    position: relative;
-    top: 2px;
-    padding-right: 10px;
+.button{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+
+    i{
+        position: relative;
+        top: 1px;
+        padding-right: 10px;
+    }
 }
 
 

@@ -2428,14 +2428,21 @@ html {
 #main > section.one.userscripts {
   background-image: url(../../images/banner-userscripts.jpg);
 }
+#main > section.one.storage {
+  background-image: url(../../images/banner-storage.jpg);
+}
 
 #main header p {
   text-align: center;
 }
 
-.button span.icon {
+.button {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.button i {
   position: relative;
-  top: 2px;
+  top: 1px;
   padding-right: 10px;
 }
 

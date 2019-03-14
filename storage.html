@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>The Outpost | Userscript Experiments</title>
+		<title>The Outpost | Blackie Mini Storage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="
 //fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/lib/jquery-colorbox/example3/colorbox.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -63,12 +63,12 @@
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover userscripts">
+					<section id="top" class="one dark cover storage">
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Userscript Experiments</h2>
-								<p>Additional features <span class="fancy">&amp;</span> useability <span class='nbs'>across the web</span></p>
+								<h2 class="alt">Blackie Mini Storage</h2>
+								<p>A small, responsive website for a small, <span class='nbs'>rural business</span></p>
                             </header>
 
 						</div>
@@ -82,16 +82,21 @@
 								<h2>Information</h2>
 							</header>
 
-                            <p>This was a class assignment done in our second Adobe Flash course and is (clearly) a remake of the classic Space Invaders arcade game. It's currently missing its preloader, and there are a few things I would like to tweak about the gameplay mechanics and graphics, but otherwise the game is both complete and playable.</p>
+                            <p><strong>Blackie Mini Storage</strong> is a small company in rural Alberta, providing shipping containers for long-term storage. I was contacted by them and asked to make a simple, clean website that would display nicely on any screen size. It's not a content-heavy site by any means; it's simply to give <strong>Blackie Mini Storage</strong> a web presence, and allow people to find or contact them
+                            more easily.</p>
 
-                            <img class="image featured" src="images/pic08.jpg" alt="" />
-
-							<p>I previously held contests to see who could get the highest score, but then I changed where the game was stored on my website and broke the scoreboard... Oops. It's an easy fix but I no longer own Flash.</p>
+							<p>It may be a small detail, but I'm really proud of the "Directions" button and how its behavior and presentation are adjusted according to the device being used. It's not something that would normally be noticed if you weren't looking for it.</p>
 
 							<h3>Technologies</h3>
-							<p>This game uses nothing more than <strong>ActionScript 2</strong> and <strong>PHP/MySQL</strong>. The graphics were designed by-hand using the awesome <a href="https://itunes.apple.com/us/app/pixen/id525180431?mt=12">Pixen</a> graphics program for Mac OS X, and the music is the title track to "<a href="
-//www.8bitpeoples.com/products/520393-starscream-future-and-it-doesnt-work">Future, and It Doesn't Work</a>" by <strong>Infinity Shred</strong> (aka. Starscream).</p>
-                            <a class='button' href="#"><span class="icon fa-github"></span> Userscript Template</a>
+                            <p>After a year of experimenting with preprocessors, this was my first finished website preprocessed with <a href="https://pugjs.org/"> Pug (aka. Jade)</a> and <a href="https://sass-lang.com/">Sass</a>. It was also the first fully responsive website I had build from scratch, as that had somehow not been part of my school curriculum&hellip; It's always an exciting experience to transition from "learning" to "applying".</p>
+
+                            <p>The responsive framework uses the <a href="https://www.bourbon.io/">Bourbon</a> <span class="fancy">&amp;</span> <a href="https://neat.bourbon.io/">Neat</a> Sass libraries, while the interactive map uses the <a href="https://cloud.google.com/maps-platform/">Google Maps API</a>.
+                            Fonts and icons use <a href="https://fonts.google.com/">Google Fonts</a> and <a href="https://fontawesome.com/">Font Awesome</a> respectively.</p>
+
+                            <p>In order to teach myself <a href="https://wordpress.org/">Wordpress</a>, I also created a one-page template duplicating the site. While the front-end remains the same, the backend is powered by Wordpress. (The Google Maps plugin hasn't been updated for this version, however).</p>
+
+                            <a class='button' href="https://blackieministorage.com"><i class="fas fa-external-link-alt"></i>Live Site</a>
+                            <a class='button' href="https://astranomaly.com/bms-wordpress/"><i class="fab fa-wordpress"></i>Wordpress Demo</a>
 
 						</div>
 					</section>
@@ -106,30 +111,21 @@
 
 							<div class="row">
 								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/twib.jpg" alt="" /></a>
-									</article>
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/mine.jpg" alt="" /></a>
-									</article>
+									<figure class="item">
+										<a href="images/sc-storage-big.jpg" class="image fit gallery"><img src="images/sc-storage-big.jpg" alt="Blackie Mini Storage desktop view" /></a>
+									</figure>
 								</div>
 
 								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/invade.jpg" alt="" /></a>
-									</article>
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/carpentry.jpg" alt="" /></a>
-									</article>
+									<figure class="item">
+										<a href="images/sc-storage-detail.jpg" class="image fit gallery"><img src="images/sc-storage-detail.jpg" alt="Detail view of the Blackie Mini Storage website" /></a>
+									</figure>
 								</div>
 
 								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/vox.jpg" alt="" /></a>
-									</article>
-									<article class="item">
-										<a href="images/mine.jpg" class="image fit gallery"><img src="images/salsa.jpg" alt="" /></a>
-									</article>
+									<figure class="item">
+										<a href="images/sc-storage-small.jpg" class="image fit gallery"><img src="images/sc-storage-small.jpg" alt="Blackie Mini Storage tablet menu" /></a>
+									</figure>
 								</div>
 							</div>
 
