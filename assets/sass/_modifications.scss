@@ -1,11 +1,17 @@
-html {
-    scroll-behavior: smooth;
-}
 
-// A "non-breaking span" to create better line breaks
 span.nbs{
         display: inline-block;
     }
+
+.fancy {
+    font-family: Baskerville, Constantia, "Palatino Linotype","Trebuchet MS", 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 .flexbox{
     display: flex;
@@ -24,12 +30,6 @@ span.nbs{
         line-height:1.5rem;
         padding: 1.5vh 0;
     }
-}
-
-.fancy {
-    font-family: Baskerville, Constantia, "Palatino Linotype","Trebuchet MS", 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-    font-style: italic;
-    font-weight: normal;
 }
 
 
@@ -58,6 +58,29 @@ span.nbs{
         }
     }
 }
+
+#main > section{
+    p{
+        text-align: justify;
+    }
+
+    &.one.userscripts{
+        background-image: url(../../images/banner-userscripts.jpg);
+    }
+}
+
+#main header p{
+    text-align: center;
+}
+
+.button span.icon{
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+}
+
+
+// Media Queries
 
 @media all and (min-width: 738px) {
     .flexbox{
