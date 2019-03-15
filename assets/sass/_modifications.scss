@@ -1,4 +1,6 @@
 
+// Overwrite CSS
+
 span.nbs{
         display: inline-block;
     }
@@ -76,6 +78,39 @@ html {
 
 #main header p{
     text-align: center;
+}
+
+// Centered bubbles with knock-out FA icons
+.item{
+    a::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 70px;
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: calc(50% - 70px);
+        left: calc(50% - 35px);
+        border-radius: 70px;
+        color: #000;
+        background: #fff;
+        mix-blend-mode: screen;
+        opacity: 0.7;
+        transition: 0.5s all;
+    }
+    &.code a::after{
+        content: "\f121";
+    }
+    &.server a::after{
+        content: "\f233";
+    }
+    &.design a::after{
+        content: "\f5ad";
+    }
+    &:hover a::after{
+        opacity: 0.9;
+    }
 }
 
 .button{

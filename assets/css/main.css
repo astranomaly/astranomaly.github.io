@@ -2436,6 +2436,36 @@ html {
   text-align: center;
 }
 
+.item a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 35px);
+  border-radius: 70px;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: screen;
+  opacity: 0.7;
+  transition: 0.5s all;
+}
+.item.code a::after {
+  content: "";
+}
+.item.server a::after {
+  content: "";
+}
+.item.design a::after {
+  content: "";
+}
+.item:hover a::after {
+  opacity: 0.9;
+}
+
 .button {
   margin-left: 0.6rem;
   margin-right: 0.6rem;
