@@ -114,6 +114,11 @@
 					$('#headerToggle, #header, #main')
                         .css('transition', 'none');
 
-            $( 'a.gallery' ).colorbox();
+            $( 'a.gallery' ).colorbox({
+                rel: 'gallery',
+                scalePhotos: true,
+                maxWidth: "95%",
+                maxHeight: "95%",
+            });
     });
 })(jQuery);
