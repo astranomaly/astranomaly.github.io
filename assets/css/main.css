@@ -2431,6 +2431,18 @@ html {
 #main > section.one.storage {
   background-image: url(../../images/banner-storage.jpg);
 }
+#main > section.one.maxq {
+  background-image: url(../../images/banner-maxq-v2.jpg);
+}
+#main > section.one.design {
+  background-image: url(../../images/banner-design.jpg);
+}
+#main > section.one.twib {
+  background-image: url(../../images/banner-twib.jpg);
+}
+#main > section.one.mockups {
+  background-image: url(../../images/banner-mockups.jpg);
+}
 
 #main header p {
   text-align: center;
