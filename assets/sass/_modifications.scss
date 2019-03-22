@@ -11,8 +11,17 @@ span.nbs{
     font-weight: normal;
 }
 
+strong.notice{
+    font-weight: bold;
+    color: maroon;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+#info blockquote{
+    text-align: left;
 }
 
 .flexbox{
