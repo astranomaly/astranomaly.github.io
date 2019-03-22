@@ -2495,6 +2495,9 @@ span.code {
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
+#info .button {
+  margin-bottom: 1rem;
+}
 .button i {
   position: relative;
   top: 1px;

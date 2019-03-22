@@ -1,0 +1,408 @@
+/*FONTS*/
+@font-face {
+    font-family:'YearlingLite';
+    src: url('../fonts/yearlite-webfont.eot');
+    src: url('../fonts/yearlite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yearlite-webfont.woff') format('woff'),
+         url('../fonts/yearlite-webfont.ttf') format('truetype'),
+         url('../fonts/yearlite-webfont.svg#YearlingLiteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*GLOBAL*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:'Lato', sans-serif;
+	font-weight:300;
+	text-decoration:none;
+	text-emphasis:none;
+	text-transform:lowercase;
+}
+
+body{
+	background:url(../img/background.jpg);
+}
+
+h1{
+	color:#00AAFF;
+	font-family:'YearlingLite', sans-serif;
+	font-size:20px;
+	float:left;
+}
+
+h2{
+	color:#00AAFF;
+	margin-bottom:30px;
+	font-family:'YearlingLite', sans-serif;
+	font-size:16px;
+}
+
+h3{
+	color:#00AAFF;
+	margin-top:30px;
+	margin-left:30px;
+	font-family:'YearlingLite', sans-serif;
+	font-size:18px;
+	float:left;
+}
+
+p{
+	margin-bottom:18px;
+	font-size:13px;
+	line-height:180%;
+}
+
+.imgHover{
+	display:inline-block;
+	margin-right:20px;
+	float:left;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+em{
+	color:#00AAFF;
+	font-style:normal;
+}
+
+strong{
+	font-weight:400;
+}
+
+a:link{
+	color:#FF5400;
+	font-weight:400;
+}
+
+a:visited{
+	color:#FF5400;
+	font-weight:400;
+}
+
+a:hover{
+	color:#00AAFF;
+	font-weight:400;
+}
+
+a[class=active]:link{
+	color:#FF5400;
+}
+
+a[class=active]:visited{
+	color:#FF5400;
+}
+
+a[class=active]:hover{
+	color:#FF5400;
+}
+
+a[class=inactive]:link{
+	color:#888888;
+}
+
+a[class=inactive]:visited{
+	color:#888888;
+}
+
+a[class=inactive]:hover{
+	color:#FF5400;
+}
+
+blockquote{
+	color:#00AAFF;
+	background:#F2F2F2;
+	margin-top:10px;
+	margin-left:30px;
+	margin-bottom:15px;
+	margin-right:-76px;
+	padding-top:20px;
+	padding-right:75px;
+	padding-bottom:20px;
+	padding-left:20px;
+	font-size:12px;
+	letter-spacing:0.6px;
+	border:#FFCCB2 solid 1px;
+	border-radius:10px 0 0 10px;
+	-o-border-radius:10px 0 0 10px;
+	-moz-border-radius:10px 0 0 10px;
+	-webkit-border-radius:10px 0 0 10px;
+}
+
+ul{
+	color:#888888;
+	margin-bottom:10px;
+}
+
+dl{
+	text-align:left;
+}
+
+dt{
+	color:#878787;
+}
+
+dd{
+	color:#805540;
+	margin-bottom:10px;
+}
+
+.divider{
+	margin-top:5px;
+	margin-bottom:50px;
+}
+
+.subdivider{
+	margin-top:40px;
+	width:110px;
+	height:1px;
+}
+
+.first{
+	margin-top:50px;
+}
+
+.second{
+	margin-top:30px;
+}
+
+iframe{
+	border-radius:10px;
+	-o-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+/*WRAPPER*/
+#wrapper{
+	margin:0 auto;
+	padding-top:100px;
+	padding-bottom:100px;
+	width:800px;
+}
+
+/*PAGE*/
+#page{
+	background:#FFFFFF;
+	padding:25px 75px 25px 50px;
+	width:450px;
+	min-height:400px;
+	float:left;
+	text-align:justify;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+#page:hover{
+	border:#FFCCB2 solid 1px;
+	margin-bottom:-2px;
+	position:relative;
+	right:1px;
+	bottom:1px;
+}
+
+header{
+	height:75px;
+	margin-bottom:45px;
+}
+
+header a{
+	background:url(../img/dalesThoughts.gif) no-repeat;
+	width:160px;
+	height:50px;
+	display:inline-block;
+	position:relative;
+	right:60px;
+}
+
+header a:hover{
+	background-position:0 -50px;
+}
+
+#page .divider{
+	position:relative;
+	top:7px;
+}
+
+#page li{
+	list-style:circle;
+}
+
+/*SIDEBAR*/
+aside{
+	background:#FFFFFF;
+	padding:25px;
+	width:150px;
+	min-height:400px;
+	float:right;
+	text-align:center;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+aside:hover{
+	border:#FFCCB2 solid 1px;
+	margin-bottom:-2px;
+	position:relative;
+	left:1px;
+	bottom:1px;
+}
+
+nav{
+	margin-bottom:50px;
+}
+
+nav ul{
+	list-style:none;
+	line-height:150%;
+}
+
+nav a{
+	font-family:'YearlingLite', sans-serif;
+	font-size:14px;
+}
+
+#archive dd{
+	margin-left:20px;
+}
+
+aside dd{
+	margin-left:20px;
+}
+
+aside p{
+	text-align:left;
+	color:#878787;
+}
+
+aside li{
+	list-style:none;
+	text-align:left;
+	line-height:150%;
+}
+
+#social #facebook{
+	background:url(../img/facebook.gif) no-repeat;
+	display:inline-block;
+	width:25px;
+	height:25px;
+}
+
+#social #facebook:hover{
+	background-position:0 -25px;
+}
+
+#social #googleplus{
+	background:url(../img/googleplus.gif) no-repeat;
+	display:inline-block;
+	width:25px;
+	height:25px;
+}
+
+#social #googleplus:hover{
+	background-position:0 -25px;
+}
+
+#social #twitter{
+	background:url(../img/twitter.gif) no-repeat;
+	display:inline-block;
+	width:25px;
+	height:25px;
+}
+
+#social #twitter:hover{
+	background-position:0 -25px;
+}
+
+#social #instagram{
+	background:url(../img/instagram.gif) no-repeat;
+	display:inline-block;
+	width:25px;
+	height:25px;
+}
+
+#social #instagram:hover{
+	background-position:0 -25px;
+}
+
+#social #path{
+	background:url(../img/path.gif) no-repeat;
+	display:inline-block;
+	width:25px;
+	height:25px;
+}
+
+#social #path:hover{
+	background-position:0 -25px;
+}
+
+/*FOOTER*/
+footer{
+	padding-top:20px;
+	text-align:center;
+	clear:both;
+}
+
+footer a{
+	font-size:10px;
+	font-weight:300;
+}
+
+footer a:link{
+	color:#BCCCD4;
+}
+
+footer a:visited{
+	color:#BCCCD4;
+}
+
+footer a:hover{
+	color:#00AAFF;
+}
+
+footer p{
+	color:#C6C6C6;
+	margin-bottom:0;
+	font-size:10px;
+	letter-spacing:1px;
+	text-align:center;
+	line-height:110%;
+}
+
+/*HOVER IMAGES*/
+#dalesFace{
+	background:url(../img/dalesFace.jpg) no-repeat;
+	width:200px;
+	height:200px;
+}
+
+#dalesFace:hover{
+	background-position:0 -200px;
+}
+
+.thumbs{
+	display:inline-block;
+	margin-right:20px;
+	float:left;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+.thumbs:hover{
+	border:#FFCCB2 solid 1px;
+	margin-bottom:-2px;
+	position:relative;
+	right:1px;
+	bottom:1px;
+}

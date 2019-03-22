@@ -142,6 +142,10 @@ span.code{
     margin-left: 0.6rem;
     margin-right: 0.6rem;
 
+    #info &{
+        margin-bottom: 1rem;
+    }
+
     i{
         position: relative;
         top: 1px;
